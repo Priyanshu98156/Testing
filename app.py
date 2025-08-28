@@ -17,13 +17,27 @@ env = Environment(
 st.title("Resume Generator (LaTeX via TeX Live)")
 
 # Inputs
-name = st.text_input("Enter your name")
-telephone = st.text_input("Enter your phone number")
-email = st.text_input("Enter your email")
-linkedin = st.text_input("Enter your LinkedIn URL")
-github = st.text_input("Enter your GitHub URL")
-hackerrank_id = st.text_input("Enter your Hackerrank URL")
-city = st.text_input("Enter your city")
+name     = st.text_input("Full Name", placeholder="e.g., Priyanshu Sharma")
+phone    = st.text_input("Phone Number", placeholder="e.g., +91 9876543210")
+email    = st.text_input("Email Address", placeholder="e.g., you@example.com")
+linkedin = st.text_input("LinkedIn Profile URL", placeholder="e.g., https://linkedin.com/in/username")
+github   = st.text_input("GitHub Profile URL", placeholder="e.g., https://github.com/username")
+city     = st.text_input("City", placeholder="e.g., New Delhi")
+
+school_10 = st.text_input("10th School Name", placeholder="e.g., Kendriya Vidyalaya")
+marks_10  = st.text_input("10th Percentage", placeholder="e.g., 89.5%")
+
+school_12 = st.text_input("12th / Diploma School/College", placeholder="e.g., Delhi Public School")
+marks_12  = st.text_input("12th / Diploma Percentage", placeholder="e.g., 85.2%")
+
+grad_college       = st.text_input("Graduation College", placeholder="e.g., DAV Institute of Engineering & Technology")
+grad_batch_start   = st.text_input("Enter Start of Graduation ", placeholder="e.g., Aug 2022")
+grad_batch_end     = st.text_input("Enter End of Graduation ", placeholder="e.g., June 2026")
+grad_city_state    = st.text_input("Enter State, City of Gradation College ", placeholder="e.g., Jalandhar, Punjab");
+
+grad_name    = st.text_input("Graduation Name", placeholder="e.g., B.tech")
+grad_cgpa    = st.text_input("Graduation CGPA / Percentage", placeholder="e.g., 8.2/10 or 82%")
+
 
 if st.button("Generate Resume"):
     try:
@@ -31,12 +45,17 @@ if st.button("Generate Resume"):
         template = env.get_template("resume.tex")
         latex_code = template.render(
             name=name,
-            telephone=telephone,
+            telephone=phone,
             email=email,
             linkedin=linkedin,
             github=github,
-            hackerrank_id=hackerrank_id,
-            city=city
+            city=city,
+            grad_college = grad_college,
+            grad_batch_start =  grad_batch_start,
+            grad_name = grad_name,
+            grad_cgpa = grad_cgpa,
+            grad_batch_end = grad_batch_end,
+            grad_city_state = grad_city_state
         )
 
         tex_file = "resumefinal.tex"
@@ -61,7 +80,7 @@ if st.button("Generate Resume"):
         elif os.path.exists(pdf_file):
             st.success("PDF generated successfully ✅")
             with open(pdf_file, "rb") as f:
-                st.download_button("Download Resume", f, file_name="resume.pdf")
+                st.download_button("Download Resume", f, file_name=f"{name}.pdf")
         else:
             st.error("PDF was not generated ❌")
 
