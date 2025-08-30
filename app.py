@@ -24,19 +24,13 @@ linkedin = st.text_input("LinkedIn Profile URL", placeholder="e.g., https://link
 github   = st.text_input("GitHub Profile URL", placeholder="e.g., https://github.com/username")
 city     = st.text_input("City", placeholder="e.g., New Delhi")
 
-school_10 = st.text_input("10th School Name", placeholder="e.g., Kendriya Vidyalaya")
-marks_10  = st.text_input("10th Percentage", placeholder="e.g., 89.5%")
-
-school_12 = st.text_input("12th / Diploma School/College", placeholder="e.g., Delhi Public School")
-marks_12  = st.text_input("12th / Diploma Percentage", placeholder="e.g., 85.2%")
-
+grad_name          = st.text_input("Graduation Name", placeholder="e.g., B.tech")
+grad_cgpa          = st.text_input("Graduation CGPA / Percentage", placeholder="e.g., 8.2/10 or 82%")
 grad_college       = st.text_input("Graduation College", placeholder="e.g., DAV Institute of Engineering & Technology")
 grad_batch_start   = st.text_input("Enter Start of Graduation ", placeholder="e.g., Aug 2022")
 grad_batch_end     = st.text_input("Enter End of Graduation ", placeholder="e.g., June 2026")
 grad_city_state    = st.text_input("Enter State, City of Gradation College ", placeholder="e.g., Jalandhar, Punjab");
 
-grad_name    = st.text_input("Graduation Name", placeholder="e.g., B.tech")
-grad_cgpa    = st.text_input("Graduation CGPA / Percentage", placeholder="e.g., 8.2/10 or 82%")
 
 
 if st.button("Generate Resume"):
