@@ -17,6 +17,9 @@ env = Environment(
 st.title("Resume Generator (LaTeX via TeX Live)")
 
 # Inputs
+if "projects" not in st.session_state:
+    st.session_state["projects"] = []
+
 name     = st.text_input("Full Name", placeholder="e.g., Priyanshu Sharma")
 phone    = st.text_input("Phone Number", placeholder="e.g., +91 9876543210")
 email    = st.text_input("Email Address", placeholder="e.g., you@example.com")
@@ -30,10 +33,35 @@ grad_college       = st.text_input("Graduation College", placeholder="e.g., DAV 
 grad_batch_start   = st.text_input("Enter Start of Graduation ", placeholder="e.g., Aug 2022")
 grad_batch_end     = st.text_input("Enter End of Graduation ", placeholder="e.g., June 2026")
 grad_city_state    = st.text_input("Enter State, City of Gradation College ", placeholder="e.g., Jalandhar, Punjab");
-languages   = st.text_input("Languages", placeholder="e.g., c++,Python");
-tools    = st.text_input("Tools ", placeholder="e.g., VSCode");
-frameworks= st.text_input("Frameworks ", placeholder="e.g.,React,NodeJs");
-certificates = st.text_input("Enter your certificates (comma separated)", placeholder= "e.g., Mastering DSA- Udemy , Machine learning using Python-Udemy")
+languages          = st.text_input("Languages", placeholder="e.g., c++,Python");
+tools              = st.text_input("Tools ", placeholder="e.g., VSCode");
+frameworks         = st.text_input("Frameworks ", placeholder="e.g.,React,NodeJs");
+certificates       = st.text_input("Enter your certificates (comma separated)", placeholder= "e.g., Mastering DSA- Udemy , Machine learning using Python-Udemy")
+st.header("Projects")
+
+with st.form("project_form", clear_on_submit=True):
+    proj_name = st.text_input("Project Name")
+    proj_link = st.text_input("Project Link (GitHub/Live/Download)")
+    proj_stack = st.text_input("Technology Stack")
+    proj_points = st.text_area("Key Points (comma separated)")
+    proj_date = st.text_input("Date (MM YYYY)")
+    
+    submitted = st.form_submit_button("Add Project")
+    if submitted:
+        st.session_state["projects"].append({
+            "name": proj_name,
+            "link": proj_link,
+            "stack": proj_stack,
+            "points": [p.strip() for p in proj_points.split(",") if p.strip()],
+            "date": proj_date
+        })
+
+# Show projects already added
+for i, proj in enumerate(st.session_state["projects"]):
+    st.markdown(f"**{proj['name']}** ({proj['date']}) — {proj['stack']}")
+    for p in proj["points"]:
+        st.markdown(f"- {p}")
+
 
 if certificates:
     cert_list = [c.strip() for c in certificates.split(",")]
@@ -43,10 +71,29 @@ if certificates:
     )
 
 
+def generate_projects_latex(projects):
+    project_latex = ""
+    for proj in projects:
+        # Create bullet points for the project
+        bullets = "\n".join([fr"\item {p}" for p in proj["points"]])
+        
+        # Each project block
+        project_latex += (
+            fr"\textbf{{{proj['name']}}} "
+            fr"\href{{{proj['link']}}}{{\faExternalLink}} "
+            fr"| \textit{{{proj['stack']}}} \hfill {proj['date']} \\[2pt]"  # small vertical space
+            "\n"
+            r"\begin{itemize}[leftmargin=*]" "\n"
+            f"{bullets}" "\n"
+            r"\end{itemize}" "\n\n"
+        )
+    return project_latex
+
 
 if st.button("Generate Resume"):
     try:
         # Load Jinja2 template and render with user input
+        projects_latex = generate_projects_latex(st.session_state["projects"])
         template = env.get_template("resume.tex")
         latex_code = template.render(
             name=name,
@@ -64,7 +111,8 @@ if st.button("Generate Resume"):
             languages=languages,
             tools=tools,
             frameworks=frameworks,
-            certs_latex=certs_latex
+            certs_latex=certs_latex,
+            projects_latex = projects_latex
 
         )
 

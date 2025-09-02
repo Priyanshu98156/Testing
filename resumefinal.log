@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.28)  2 SEP 2025 16:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.28)  2 SEP 2025 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,6 +23,16 @@ File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 )
+(c:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\enitkv@toks@=\toks17
+\labelindent=\skip51
+\enit@outerparindent=\dimen149
+\enit@toks=\toks18
+\enit@inbox=\box53
+\enit@count@id=\count283
+\enitdp@description=\count284
+)
 (c:/texlive/2025/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
@@ -31,19 +41,19 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 )
 (c:/texlive/2025/texmf-dist/tex/latex/preprint/fullpage.sty
 Package: fullpage 1999/02/23 1.1 (PWD)
-\FP@margin=\skip51
+\FP@margin=\skip52
 )
 (c:/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box53
-\beforetitleunit=\skip52
-\aftertitleunit=\skip53
-\ttl@plus=\dimen149
-\ttl@minus=\dimen150
-\ttl@toksa=\toks17
-\titlewidth=\dimen151
-\titlewidthlast=\dimen152
-\titlewidthfirst=\dimen153
+\ttl@box=\box54
+\beforetitleunit=\skip53
+\aftertitleunit=\skip54
+\ttl@plus=\dimen150
+\ttl@minus=\dimen151
+\ttl@toksa=\toks19
+\titlewidth=\dimen152
+\titlewidthlast=\dimen153
+\titlewidthfirst=\dimen154
 )
 (c:/texlive/2025/texmf-dist/tex/latex/marvosym/marvosym.sty
 Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
@@ -65,19 +75,9 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 (c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 (c:/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks18
-\verbatim@line=\toks19
+\every@verbatim=\toks20
+\verbatim@line=\toks21
 \verbatim@in@stream=\read2
-)
-(c:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2025/02/06 v3.11 Customized lists
-\enitkv@toks@=\toks20
-\labelindent=\skip54
-\enit@outerparindent=\dimen154
-\enit@toks=\toks21
-\enit@inbox=\box54
-\enit@count@id=\count283
-\enitdp@description=\count284
 )
 (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
@@ -763,11 +763,11 @@ Package rerunfilecheck Info: File `resumefinal.out' has not changed.
 (rerunfilecheck)             Checksum: 00D0A5220B4754E61FDD8FC6AEFB236F;327.
  ) 
 Here is how much of TeX's memory you used:
- 23278 strings out of 467799
- 428964 string characters out of 5436040
- 828192 words of memory out of 5000000
- 51548 multiletter control sequences out of 15000+600000
- 634039 words of font info for 67 fonts, out of 8000000 for 9000
+ 23279 strings out of 467799
+ 428990 string characters out of 5436040
+ 832192 words of memory out of 5000000
+ 51549 multiletter control sequences out of 15000+600000
+ 634355 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,7n,91p,415b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb><c
@@ -777,12 +777,12 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2025/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2025/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-12.pfb>
-Output written on resumefinal.pdf (1 page, 110799 bytes).
+s/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on resumefinal.pdf (1 page, 124442 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  5 named destinations out of 1000 (max. 500000)
  37 words of extra memory for PDF output out of 10000 (max. 10000000)
 
