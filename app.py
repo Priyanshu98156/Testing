@@ -33,12 +33,14 @@ grad_city_state    = st.text_input("Enter State, City of Gradation College ", pl
 languages   = st.text_input("Languages", placeholder="e.g., c++,Python");
 tools    = st.text_input("Tools ", placeholder="e.g., VSCode");
 frameworks= st.text_input("Frameworks ", placeholder="e.g.,React,NodeJs");
-certificates = st.text_input("Certifications", placeholder="e.g., ReactJS & Redux - Udemy, SQL, Java")
+certificates = st.text_input("Enter your certificates (comma separated)", placeholder= "e.g., Mastering DSA- Udemy , Machine learning using Python-Udemy")
 
-# if certificates.strip():
-#     certificates_list = "".join([f"\\item {c.strip()}\n" for c in certificates.split(",") if c.strip()])
-# else:
-#     certificates_list = "\\item None"   # fallback so LaTeX doesn't break
+if certificates:
+    cert_list = [c.strip() for c in certificates.split(",")]
+
+    certs_latex = "\n".join(
+        [fr"$\sbullet[.75] \hspace{{0.1cm}}$ {c} \\" for c in cert_list]
+    )
 
 
 
@@ -62,7 +64,7 @@ if st.button("Generate Resume"):
             languages=languages,
             tools=tools,
             frameworks=frameworks,
-            certificates=certificates
+            certs_latex=certs_latex
 
         )
 
