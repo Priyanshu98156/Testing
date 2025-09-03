@@ -2,7 +2,7 @@ import streamlit as st
 import subprocess
 import os
 from jinja2 import Environment, FileSystemLoader
-
+from api_calls import generate_resume_summary
 # Load Jinja2 with custom delimiters
 env = Environment(
     block_start_string='((*',
@@ -19,6 +19,9 @@ st.title("Resume Generator (LaTeX via TeX Live)")
 # Inputs
 if "projects" not in st.session_state:
     st.session_state["projects"] = []
+
+job_desc        = st.text_input("Enter job description")
+user_summary    = st.text_input("Enter your summary")
 
 name     = st.text_input("Full Name", placeholder="e.g., Priyanshu Sharma")
 phone    = st.text_input("Phone Number", placeholder="e.g., +91 9876543210")
@@ -93,6 +96,7 @@ def generate_projects_latex(projects):
 if st.button("Generate Resume"):
     try:
         # Load Jinja2 template and render with user input
+        polished_summary = generate_resume_summary( job_desc, user_summary)
         projects_latex = generate_projects_latex(st.session_state["projects"])
         template = env.get_template("resume.tex")
         latex_code = template.render(
@@ -102,6 +106,7 @@ if st.button("Generate Resume"):
             linkedin=linkedin,
             github=github,
             city=city,
+            user_summary = polished_summary,
             grad_college = grad_college,
             grad_batch_start =  grad_batch_start,
             grad_name = grad_name,
