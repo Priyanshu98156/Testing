@@ -228,20 +228,20 @@ with st.form("project_form", clear_on_submit=True):
     proj_link = st.text_input("Project Link (GitHub/Live/Download)")
     proj_stack = st.text_input("Technology Stack")
     proj_raw_summary = st.text_area("Short Project Description (1–2 lines)")
-    proj_points = st.text_area("Key Points (comma separated)")
+    # proj_points = st.text_area("Key Points (comma separated)")
     proj_date = st.text_input("Date (MM YYYY)")
 
     submitted = st.form_submit_button("Add Project")
     if submitted:
         # ✅ Call Gemini API for polished summary
-        polished_proj_summary = generate_project_summary(proj_name, proj_raw_summary)
+        polished_proj_summary = generate_project_summary(proj_name, proj_raw_summary, proj_stack)
 
         st.session_state["projects"].append({
             "name": proj_name,
             "link": proj_link,
             "stack": proj_stack,
             "summary": polished_proj_summary,   # store polished summary
-            "points": [p.strip() for p in proj_points.split(",") if p.strip()],
+            # "points": [p.strip() for p in proj_points.split(",") if p.strip()],
             "date": proj_date
         })
         st.success(f"Project '{proj_name}' added with polished summary! ✅")
@@ -250,39 +250,15 @@ with st.form("project_form", clear_on_submit=True):
 # Show projects already added
 for i, proj in enumerate(st.session_state["projects"]):
     st.markdown(f"**{proj['name']}** ({proj['date']}) — {proj['stack']}")
-    for p in proj["points"]:
-        st.markdown(f"- {p}")
+    # for p in proj["points"]:
+    #     st.markdown(f"- {p}")
 
 
-# if certificates:
-#     cert_list = [c.strip() for c in certificates.split(",")]
 
-#     certs_latex = "\n".join(
-#         [fr"$\sbullet[.75] \hspace{{0.1cm}}$ {c} \\" for c in cert_list]
-#     )
-
-
-# def generate_projects_latex(projects):
-#     project_latex = ""
-#     for proj in projects:
-#         # Create bullet points for the project
-#         bullets = "\n".join([fr"\item {p}" for p in proj["points"]])
-        
-#         # Each project block
-#         project_latex += (
-#             fr"\textbf{{{proj['name']}}} "
-#             fr"\href{{{proj['link']}}}{{\faExternalLink}} "
-#             fr"| \textit{{{proj['stack']}}} \hfill {proj['date']} \\[2pt]"  # small vertical space
-#             "\n"
-#             r"\begin{itemize}[leftmargin=*]" "\n"
-#             f"{bullets}" "\n"
-#             r"\end{itemize}" "\n\n"
-#         )
-#     return project_latex
 def generate_projects_latex(projects):
     project_latex = ""
     for proj in projects:
-        bullets = "\n".join([fr"\item {p}" for p in proj["points"] if p.strip()])
+        # bullets = "\n".join([fr"\item {p}" for p in proj["points"] if p.strip()])
 
         project_latex += (
             fr"\textbf{{{proj['name']}}} "
@@ -292,12 +268,12 @@ def generate_projects_latex(projects):
         )
         
 
-        if bullets:  # ✅ Only add itemize if points exist
-            project_latex += (
-                r"\begin{itemize}[leftmargin=*]" "\n"
-                f"{bullets}" "\n"
-                r"\end{itemize}" "\n\n"
-            )
+        # if bullets:  # ✅ Only add itemize if points exist
+        #     project_latex += (
+        #         r"\begin{itemize}[leftmargin=*]" "\n"
+        #         f"{bullets}" "\n"
+        #         r"\end{itemize}" "\n\n"
+        #     )
 
     return project_latex
 
