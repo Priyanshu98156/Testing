@@ -96,3 +96,30 @@ def generate_project_summary(project_title, project_desc, project_stack):
     response = model.generate_content(project_prompt)
     return response.text.strip()
 
+
+
+
+def generate_achievements(achievements_raw):
+    """
+    Polishes user achievements into resume-ready bullet points.
+    """
+    prompt = f"""
+    Role: You are an expert technical resume writer.
+
+    The user provides a list of raw achievements. Your task is to:
+    - Rewrite them in a polished, ATS-friendly way.
+    - Keep them concise (10–20 words each).
+    - Use strong action verbs ("achieved", "secured", "recognized").
+    - STRICTLY output as bullet points (•).
+    - Do NOT write paragraphs or explanations.
+
+    User Achievements:
+    {achievements_raw}
+
+    Output:
+    Resume-ready achievements in bullet points.
+    """
+
+    model = genai.GenerativeModel('gemini-1.5-flash')
+    response = model.generate_content(prompt)
+    return response.text.strip()

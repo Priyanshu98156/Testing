@@ -2,7 +2,7 @@ import streamlit as st
 import subprocess
 import os
 from jinja2 import Environment, FileSystemLoader
-from api_calls import generate_resume_summary, generate_project_summary
+from api_calls import generate_resume_summary, generate_project_summary,generate_achievements
 from collections import defaultdict
 
 # Load Jinja2 with custom delimiters
@@ -39,6 +39,19 @@ def escape_latex(text: str) -> str:
 
 env.filters["latex_escape"] = escape_latex
 
+
+def format_achievements_for_latex(text: str) -> str:
+    """
+    Takes Gemini's bullet-style string and converts it into proper LaTeX \item list.
+    """
+    # Split using "•" or newline as separators
+    parts = [p.strip() for p in text.replace("\n", "•").split("•") if p.strip()]
+
+    # Convert into LaTeX items
+    items = "\n".join([fr"\item {p}" for p in parts])
+    
+    # Wrap inside LaTeX itemize environment
+    return r"\begin{itemize}[leftmargin=*]" + "\n" + items + "\n" + r"\end{itemize}"
 
 st.title("Resume Generator (LaTeX via TeX Live)")
 
@@ -219,8 +232,32 @@ if st.session_state["certificates"]:
     for i, cert in enumerate(st.session_state["certificates"], start=1):
         st.markdown(f"**{i}. {cert['name']}**")
 
-# certificates       = st.text_input("Enter your certificates (comma separated)", placeholder= "e.g., Mastering DSA- Udemy , Machine learning using Python-Udemy")
 
+
+st.header("Achievements")
+
+# Initialize certificates if not already in session_state
+if "achievements" not in st.session_state:
+    st.session_state["achievements"] = []
+
+with st.form("achievements_form", clear_on_submit=True):
+    achievement_name = st.text_input("achievements", placeholder="eg. Secured 1st place in hackathon")
+    submitted = st.form_submit_button("Add Achievement")
+    if submitted and achievement_name.strip():
+        st.session_state["achievements"].append({
+            "name": achievement_name.strip()
+        })
+        st.success(f"Achievements '{achievement_name}' added ! ✅")
+
+# Display added certificates
+if st.session_state["achievements"]:
+    st.subheader("Your achievements")
+    for i, achievement in enumerate(st.session_state["achievements"], start=1):
+        st.markdown(f"**{i}. {achievement['name']}**")
+
+    raw_achievements = "\n".join(
+        [ach["name"] for ach in st.session_state["achievements"]]
+    )
 
 st.header("Projects")
 with st.form("project_form", clear_on_submit=True):
@@ -301,8 +338,9 @@ if st.button("Generate Resume"):
 
 # Call API to polish the summary
         polished_summary = generate_resume_summary(job_desc, user_summary)
-
-        
+       
+        polished_achievements = generate_achievements(raw_achievements)
+        achievement_latex     = format_achievements_for_latex(polished_achievements)
         # Generate LaTeX code for sections
         projects_latex = generate_projects_latex(st.session_state["projects"])
         education_latex = generate_education_latex(st.session_state["education"])
@@ -326,7 +364,8 @@ if st.button("Generate Resume"):
             certs_latex=certs_latex,
             projects_latex=projects_latex,
             education_latex=education_latex,
-            skills_latex=skills_latex
+            skills_latex=skills_latex,
+            polished_achievements = achievement_latex
         )
 
         # Write and compile the LaTeX file
