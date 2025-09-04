@@ -6,7 +6,9 @@ import streamlit as st
 import subprocess
 import os
 from jinja2 import Environment, FileSystemLoader
-from api_calls import generate_resume_summary
+from api_calls import generate_resume_summary, generate_project_summary
+
+
 # Load Jinja2 with custom delimiters
 env = Environment(
     block_start_string='((*',
@@ -17,6 +19,30 @@ env = Environment(
     comment_end_string='=))',
     loader=FileSystemLoader('.')  # Looks for resume.tex in current folder
 )
+# Escape LaTeX special characters
+
+def escape_latex(text: str) -> str:
+    replacements = {
+        "\\": r"\textbackslash{}",
+        "%": r"\%",
+        "&": r"\&",
+        "$": r"\$",
+        "#": r"\#",
+        "_": r"\_",
+        "{": r"\{",
+        "}": r"\}",
+        "~": r"\textasciitilde{}",
+        "^": r"\textasciicircum{}",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    return text.replace("\n", r"\\ ")
+
+
+# Register as Jinja filter
+
+env.filters["latex_escape"] = escape_latex
+
 
 st.title("Resume Generator (LaTeX via TeX Live)")
 
@@ -32,8 +58,54 @@ if "personal_info" not in st.session_state:
     st.session_state["personal_info"] = {}
 
 
-job_desc        = st.text_input("Enter job description")
-user_summary    = st.text_input("Enter your summary")
+# job_desc        = st.text_input("Enter job description")
+# user_summary    = st.text_input("Enter your summary")
+st.header("Job Description & Summary")
+
+if "jd_summary" not in st.session_state:
+    st.session_state["jd_summary"] = {"jd": "", "summary": ""}
+
+with st.form("jd_summary_form"):
+    jd_text = st.text_area(
+        "Job Description", 
+        value=st.session_state["jd_summary"]["jd"], 
+        placeholder="Paste the job description here..."
+    )
+    summary_text = st.text_area(
+        "Your Summary", 
+        value=st.session_state["jd_summary"]["summary"], 
+        placeholder="Write about your profile..."
+    )
+
+    submitted_jd = st.form_submit_button("Save JD & Summary")
+
+    if submitted_jd:
+        st.session_state["jd_summary"]["jd"] = jd_text
+        st.session_state["jd_summary"]["summary"] = summary_text
+        st.success("Job description & summary saved ✅")
+
+if st.session_state["jd_summary"]["jd"] or st.session_state["jd_summary"]["summary"]:
+    st.markdown("---")
+    st.subheader("📌 Job Description")
+    st.write(st.session_state["jd_summary"]["jd"])
+
+    st.subheader("📝 Summary")
+    st.write(st.session_state["jd_summary"]["summary"])
+    st.markdown("---")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 st.header("Personal Information")
 
 
@@ -156,22 +228,46 @@ st.header("Projects")
 
 
 
+# with st.form("project_form", clear_on_submit=True):
+#     proj_name = st.text_input("Project Name")
+#     proj_link = st.text_input("Project Link (GitHub/Live/Download)")
+#     proj_stack = st.text_input("Technology Stack")
+#     proj_points = st.text_area("Key Points (comma separated)")
+#     proj_date = st.text_input("Date (MM YYYY)")
+    
+#     submitted = st.form_submit_button("Add Project")
+#     if submitted:
+#         st.session_state["projects"].append({
+#             "name": proj_name,
+#             "link": proj_link,
+#             "stack": proj_stack,
+#             "points": [p.strip() for p in proj_points.split(",") if p.strip()],
+#             "date": proj_date
+#         })
+
 with st.form("project_form", clear_on_submit=True):
     proj_name = st.text_input("Project Name")
     proj_link = st.text_input("Project Link (GitHub/Live/Download)")
     proj_stack = st.text_input("Technology Stack")
+    proj_raw_summary = st.text_area("Short Project Description (1–2 lines)")
     proj_points = st.text_area("Key Points (comma separated)")
     proj_date = st.text_input("Date (MM YYYY)")
-    
+
     submitted = st.form_submit_button("Add Project")
     if submitted:
+        # ✅ Call Gemini API for polished summary
+        polished_proj_summary = generate_project_summary(proj_name, proj_raw_summary)
+
         st.session_state["projects"].append({
             "name": proj_name,
             "link": proj_link,
             "stack": proj_stack,
+            "summary": polished_proj_summary,   # store polished summary
             "points": [p.strip() for p in proj_points.split(",") if p.strip()],
             "date": proj_date
         })
+        st.success(f"Project '{proj_name}' added with polished summary! ✅")
+
 
 # Show projects already added
 for i, proj in enumerate(st.session_state["projects"]):
@@ -188,23 +284,46 @@ if certificates:
     )
 
 
+# def generate_projects_latex(projects):
+#     project_latex = ""
+#     for proj in projects:
+#         # Create bullet points for the project
+#         bullets = "\n".join([fr"\item {p}" for p in proj["points"]])
+        
+#         # Each project block
+#         project_latex += (
+#             fr"\textbf{{{proj['name']}}} "
+#             fr"\href{{{proj['link']}}}{{\faExternalLink}} "
+#             fr"| \textit{{{proj['stack']}}} \hfill {proj['date']} \\[2pt]"  # small vertical space
+#             "\n"
+#             r"\begin{itemize}[leftmargin=*]" "\n"
+#             f"{bullets}" "\n"
+#             r"\end{itemize}" "\n\n"
+#         )
+#     return project_latex
 def generate_projects_latex(projects):
     project_latex = ""
     for proj in projects:
-        # Create bullet points for the project
-        bullets = "\n".join([fr"\item {p}" for p in proj["points"]])
-        
-        # Each project block
+        bullets = "\n".join([fr"\item {p}" for p in proj["points"] if p.strip()])
+
         project_latex += (
             fr"\textbf{{{proj['name']}}} "
             fr"\href{{{proj['link']}}}{{\faExternalLink}} "
-            fr"| \textit{{{proj['stack']}}} \hfill {proj['date']} \\[2pt]"  # small vertical space
-            "\n"
-            r"\begin{itemize}[leftmargin=*]" "\n"
-            f"{bullets}" "\n"
-            r"\end{itemize}" "\n\n"
+            fr"| \textit{{{proj['stack']}}} \hfill {proj['date']} \\[2pt]" "\n"
+            fr"{proj['summary']} \\[4pt]" "\n"
         )
+        
+
+        if bullets:  # ✅ Only add itemize if points exist
+            project_latex += (
+                r"\begin{itemize}[leftmargin=*]" "\n"
+                f"{bullets}" "\n"
+                r"\end{itemize}" "\n\n"
+            )
+
     return project_latex
+
+
 
 
 if st.button("Generate Resume"):
@@ -222,7 +341,13 @@ if st.button("Generate Resume"):
         info = st.session_state["personal_info"]
 
         # Call the polish summary API (if you have one)
+        # Replace direct job_desc and user_summary with saved state
+        job_desc = st.session_state["jd_summary"]["jd"]
+        user_summary = st.session_state["jd_summary"]["summary"]
+
+# Call API to polish the summary
         polished_summary = generate_resume_summary(job_desc, user_summary)
+
         
         # Generate LaTeX code for sections
         projects_latex = generate_projects_latex(st.session_state["projects"])

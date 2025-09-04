@@ -2,6 +2,7 @@ import google.generativeai as genai
 import os
 import streamlit as st
 
+
 # Set your API key from an environment variable for security
 # It is better to use os.getenv() than hardcoding your key
 # genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
@@ -66,3 +67,28 @@ user_sum = "Highly ambitiuos fresher. WIll like to work in the industry and use 
 polished_summary = generate_resume_summary(job_desc, user_sum)
 print("polished summary")
 print(polished_summary)
+
+def generate_project_summary(project_title, project_desc):
+    """
+    Generates a polished project summary using the Gemini API.
+    """
+    project_prompt = f"""
+    Role: You are an expert technical resume writer. 
+    Your task is to refine a candidate's project description into 
+    a concise, impactful, and ATS-friendly summary (2–3 sentences).
+
+    Project Title: {project_title}
+    User's Input: {project_desc}
+
+    Instructions:
+    - Focus on technologies, problem-solving, and outcomes.
+    - Use strong action verbs ("developed", "engineered", "implemented").
+    - Keep it professional, no "I" or personal tone.
+    - Length: 40–60 words.
+    - Output only the polished summary.
+    """
+
+    model = genai.GenerativeModel('gemini-1.5-flash')
+    response = model.generate_content(project_prompt)
+    return response.text.strip()
+    print(response)

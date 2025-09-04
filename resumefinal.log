@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.29)  3 SEP 2025 19:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.29)  4 SEP 2025 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -739,11 +739,11 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 154.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 201.
+(Font)              <10.95> on input line 200.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 201.
+(Font)              <8> on input line 200.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 201.
+(Font)              <6> on input line 200.
 
 
 [1
@@ -759,39 +759,29 @@ L3 programming layer <2025-08-13>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `resumefinal.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `resumefinal.out':
-(rerunfilecheck)             Before: D81A9133010130B04D5B175DDF024E70;317
-(rerunfilecheck)             After:  633A878408F9F5387004B9D6245AEC95;191.
+Package rerunfilecheck Info: File `resumefinal.out' has not changed.
+(rerunfilecheck)             Checksum: 633A878408F9F5387004B9D6245AEC95;191.
  ) 
 Here is how much of TeX's memory you used:
- 23270 strings out of 467800
- 428827 string characters out of 5436061
- 828192 words of memory out of 5000000
- 51541 multiletter control sequences out of 15000+600000
+ 23268 strings out of 467800
+ 428807 string characters out of 5436061
+ 829192 words of memory out of 5000000
+ 51540 multiletter control sequences out of 15000+600000
  632995 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,6n,91p,415b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{section.3} has been referenced but does not exist, 
-replaced by a fixed one
-
-<c:/texlive/2025/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb><c:/
-texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2
-025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf
--dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2025/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmti10.pfb>
-Output written on resumefinal.pdf (1 page, 102665 bytes).
+<c:/texlive/2025/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb><c
+:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive
+/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2025/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti10.pfb>
+Output written on resumefinal.pdf (1 page, 102607 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
