@@ -1,13 +1,9 @@
-
-
-
-# -----------------------------------------------------------------------------------------------------------------------------------------
 import streamlit as st
 import subprocess
 import os
 from jinja2 import Environment, FileSystemLoader
 from api_calls import generate_resume_summary, generate_project_summary
-
+from collections import defaultdict
 
 # Load Jinja2 with custom delimiters
 env = Environment(
@@ -84,24 +80,14 @@ with st.form("jd_summary_form"):
         st.session_state["jd_summary"]["summary"] = summary_text
         st.success("Job description & summary saved ✅")
 
-if st.session_state["jd_summary"]["jd"] or st.session_state["jd_summary"]["summary"]:
-    st.markdown("---")
-    st.subheader("📌 Job Description")
-    st.write(st.session_state["jd_summary"]["jd"])
+# if st.session_state["jd_summary"]["jd"] or st.session_state["jd_summary"]["summary"]:
+#     st.markdown("---")
+#     st.subheader("📌 Job Description")
+#     st.write(st.session_state["jd_summary"]["jd"])
 
-    st.subheader("📝 Summary")
-    st.write(st.session_state["jd_summary"]["summary"])
-    st.markdown("---")
-
-
-
-
-
-
-
-
-
-
+#     st.subheader("📝 Summary")
+#     st.write(st.session_state["jd_summary"]["summary"])
+#     st.markdown("---")
 
 
 
@@ -139,13 +125,6 @@ if st.session_state["personal_info"]:
     st.markdown(f"**Links:** [LinkedIn]({info['linkedin']}) | [GitHub]({info['github']})")
     st.markdown(f"**Location:** {info['city']}")
     st.markdown("---")
-
-# name     = st.text_input("Full Name", placeholder="e.g., Priyanshu Sharma")
-# phone    = st.text_input("Phone Number", placeholder="e.g., +91 9876543210")
-# email    = st.text_input("Email Address", placeholder="e.g., you@example.com")
-# linkedin = st.text_input("LinkedIn Profile URL", placeholder="e.g., https://linkedin.com/in/username")
-# github   = st.text_input("GitHub Profile URL", placeholder="e.g., https://github.com/username")
-# city     = st.text_input("City", placeholder="e.g., New Delhi")
 
 
 
@@ -205,7 +184,7 @@ if st.session_state["skills"]:
     for skill in st.session_state["skills"]:
         st.markdown(f"- **{skill['category']}**: {skill['name']}")
 
-from collections import defaultdict
+
 
 def generate_skills_latex(skills):
     grouped = defaultdict(list)
@@ -219,32 +198,31 @@ def generate_skills_latex(skills):
     return latex_output
 
 
-
 st.header("Certifications")
-certificates       = st.text_input("Enter your certificates (comma separated)", placeholder= "e.g., Mastering DSA- Udemy , Machine learning using Python-Udemy")
+
+# Initialize certificates if not already in session_state
+if "certificates" not in st.session_state:
+    st.session_state["certificates"] = []
+
+with st.form("certificate_form", clear_on_submit=True):
+    certificate_name = st.text_input("Certificate", placeholder="eg. Mastering Dsa - Udemy")
+    submitted = st.form_submit_button("Add Certificate")
+    if submitted and certificate_name.strip():
+        st.session_state["certificates"].append({
+            "name": certificate_name.strip()
+        })
+        st.success(f"Certificate '{certificate_name}' added ! ✅")
+
+# Display added certificates
+if st.session_state["certificates"]:
+    st.subheader("Your Certificates")
+    for i, cert in enumerate(st.session_state["certificates"], start=1):
+        st.markdown(f"**{i}. {cert['name']}**")
+
+# certificates       = st.text_input("Enter your certificates (comma separated)", placeholder= "e.g., Mastering DSA- Udemy , Machine learning using Python-Udemy")
 
 
 st.header("Projects")
-
-
-
-# with st.form("project_form", clear_on_submit=True):
-#     proj_name = st.text_input("Project Name")
-#     proj_link = st.text_input("Project Link (GitHub/Live/Download)")
-#     proj_stack = st.text_input("Technology Stack")
-#     proj_points = st.text_area("Key Points (comma separated)")
-#     proj_date = st.text_input("Date (MM YYYY)")
-    
-#     submitted = st.form_submit_button("Add Project")
-#     if submitted:
-#         st.session_state["projects"].append({
-#             "name": proj_name,
-#             "link": proj_link,
-#             "stack": proj_stack,
-#             "points": [p.strip() for p in proj_points.split(",") if p.strip()],
-#             "date": proj_date
-#         })
-
 with st.form("project_form", clear_on_submit=True):
     proj_name = st.text_input("Project Name")
     proj_link = st.text_input("Project Link (GitHub/Live/Download)")
@@ -276,12 +254,12 @@ for i, proj in enumerate(st.session_state["projects"]):
         st.markdown(f"- {p}")
 
 
-if certificates:
-    cert_list = [c.strip() for c in certificates.split(",")]
+# if certificates:
+#     cert_list = [c.strip() for c in certificates.split(",")]
 
-    certs_latex = "\n".join(
-        [fr"$\sbullet[.75] \hspace{{0.1cm}}$ {c} \\" for c in cert_list]
-    )
+#     certs_latex = "\n".join(
+#         [fr"$\sbullet[.75] \hspace{{0.1cm}}$ {c} \\" for c in cert_list]
+#     )
 
 
 # def generate_projects_latex(projects):
@@ -310,7 +288,7 @@ def generate_projects_latex(projects):
             fr"\textbf{{{proj['name']}}} "
             fr"\href{{{proj['link']}}}{{\faExternalLink}} "
             fr"| \textit{{{proj['stack']}}} \hfill {proj['date']} \\[2pt]" "\n"
-            fr"{proj['summary']} \\[4pt]" "\n"
+            fr"{escape_latex(proj['summary'])} \\[4pt]" "\n"
         )
         
 
@@ -353,7 +331,11 @@ if st.button("Generate Resume"):
         projects_latex = generate_projects_latex(st.session_state["projects"])
         education_latex = generate_education_latex(st.session_state["education"])
         skills_latex = generate_skills_latex(st.session_state["skills"])
-        certs_latex = "\n".join([fr"$\sbullet[.75] \hspace{{0.1cm}}$ {c} \\" for c in [c.strip() for c in certificates.split(",")] if c.strip()])
+        certs_latex = "\n".join(
+            [fr"$\sbullet[.75] \hspace{{0.1cm}}$ {cert['name']} \\" 
+            for cert in st.session_state.get("certificates", []) if cert['name'].strip()]
+        )
+
 
         # Load Jinja2 template and render with all data
         template = env.get_template("resume.tex")
@@ -393,7 +375,8 @@ if st.button("Generate Resume"):
         elif os.path.exists(pdf_file):
             st.success("PDF generated successfully ✅")
             with open(pdf_file, "rb") as f:
-                st.download_button("Download Resume", f, file_name=f"{name}Resume.pdf")
+                safe_name = name.replace(" ", "_")
+                st.download_button("Download Resume", f, file_name=f"{safe_name}Resume.pdf")
         else:
             st.error("PDF was not generated ❌")
 

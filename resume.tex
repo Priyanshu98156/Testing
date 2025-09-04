@@ -1,4 +1,6 @@
 \documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 
 \usepackage{enumitem} % allows customizing itemize
 \usepackage{latexsym}
@@ -154,47 +156,23 @@
 \section{Profile}
 <<user_summary|latex_escape>>
 
-%-----------EDUCATION-----------
-% \section{EDUCATION}
-%   \resumeSubHeadingListStart
-%     \resumeSubheading
-%       {<<grad_college>>}{<<grad_batch_start>> -- <<grad_batch_end>>}
-%       {<<grad_name>> - \textbf{CGPA} - \textbf{<<grad_cgpa>>} }{<<grad_city_state>>}
-%   \resumeSubHeadingListEnd
-
 
 \section*{Education}
 << education_latex >>
 
 
-%  ----------------TECHNICAL SKILLS--------------
-% \section{TECHNICAL SKILLS}
-%  \begin{itemize}[leftmargin=0.15in, label={}]
-%     \small{\item{
-%      \textbf{\normalsize{Languages:}}{ \normalsize{<<languages>>}} \\
-%      \textbf{\normalsize{Developer Tools:}}{ \normalsize{<<tools>>}} \\
-%      \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ <<frameworks>>}} \\
-%     }}
-%  \end{itemize}
-%  \vspace{-15pt}
+
 
 \section*{Technical Skills}
 << skills_latex >>
 
 
 
-%-----------CERTIFICATIONS-----------
-% \section{CERTIFICATIONS}
-% \begin{itemize}[leftmargin=0.15in]
-%     <<certificates>>
-% \end{itemize}
-% \vspace{-15pt}
+\section*{Projects}
+<< projects_latex >>
 
 \section{CERTIFICATIONS}
 <<certs_latex>>
-
-\section*{Projects}
-<< projects_latex >>
 
 
 \end{document}

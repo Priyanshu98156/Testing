@@ -6,7 +6,7 @@ import streamlit as st
 # Set your API key from an environment variable for security
 # It is better to use os.getenv() than hardcoding your key
 # genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-genai.configure(api_key=st.secrets["GoogleAiStudio"]["api_key"])
+genai.configure(api_key=st.secrets["GoogleAiStudio"]["anshika_api_key"])
 
 # Your final prompt with placeholders for user input
 prompt = """
@@ -64,9 +64,9 @@ A day in the life of an Infoscion
  Project and Team management"""
 user_sum = "Highly ambitiuos fresher. WIll like to work in the industry and use my skills. Have a deep understanding of python and machine learning made some projects like covid data analaysis and medvision which leverages cnn to tell that a user has tumor or not, made a employee managements system using python and tkinter"
 
-polished_summary = generate_resume_summary(job_desc, user_sum)
-print("polished summary")
-print(polished_summary)
+# polished_summary = generate_resume_summary(job_desc, user_sum)
+# print("polished summary")
+# print(polished_summary)
 
 def generate_project_summary(project_title, project_desc):
     """
