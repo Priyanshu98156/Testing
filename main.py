@@ -4,8 +4,8 @@ from resume_builder import show  # your function
 import videores
 # 🚨 Must be the very first Streamlit command
 st.set_page_config(
-    page_title="Resume App",
-    page_icon="📄",
+    page_title="Career Catalyst",
+    # page_icon="📄",
     layout="wide"
 )
 
@@ -113,11 +113,11 @@ with st.sidebar:
 
 # === Pages ===
 if selected == "Home":
-    st.markdown(
-        "<h1 style='text-align: center; color: #1cfff2;'>📄 Resume App</h1>",
-        unsafe_allow_html=True,
-    )
-    st.write("Welcome! Use the sidebar to navigate to ATS Checker or Resume Builder.")
+    st.markdown("""
+        <h1 style='text-align: center; color: #1cfff2; font-size: 60px; font-weight:bold;'>CareerCatalyst</h1>
+        <p style='text-align: center; color: #ffffff; font-size: 18px;'>AI-powered resume matcher and career guide</p>
+    """, unsafe_allow_html=True)
+    # st.write("Welcome! Use the sidebar to navigate to ATS Checker or Resume Builder.")
 
 elif selected == "ATS Checker":
     st.header("📊 ATS Checker")
