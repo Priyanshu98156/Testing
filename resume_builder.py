@@ -167,12 +167,14 @@ def show():
             f"📅 {edu['start']} - {edu['end']}  "
             f"🎯 {edu['score']}"
         )
-    def generate_education_latex(education_list):
+    def generate_education_latex(education):
         edu_latex = ""
-        for edu in education_list:
+        for edu in education:
             edu_latex += (
-                fr"\textbf{{{edu['degree']}}} \hfill {edu['start']} -- {edu['end']} \\[2pt]" "\n"
-                fr"{edu['institute']}, {edu['city_state']} \hfill {edu['score']} \\[6pt]" "\n\n"
+                fr"\textbf{{{escape_latex(edu['degree'])}}} \\[2pt]" "\n"
+                fr"{escape_latex(edu['institute'])}, {escape_latex(edu['city_state'])} "
+                fr"\hfill {escape_latex(edu['start'])} -- {escape_latex(edu['end'])} \\[2pt]" "\n"
+                fr"CGPA/Percentage: {escape_latex(edu['score'])} \\[6pt]" "\n"
             )
         return edu_latex
 
@@ -287,30 +289,21 @@ def show():
     # Show projects already added
     for i, proj in enumerate(st.session_state["projects"]):
         st.markdown(f"**{proj['name']}** ({proj['date']}) — {proj['stack']}")
-        # for p in proj["points"]:
-        #     st.markdown(f"- {p}")
-
-
-
+       
+    
+    
     def generate_projects_latex(projects):
         project_latex = ""
         for proj in projects:
-            # bullets = "\n".join([fr"\item {p}" for p in proj["points"] if p.strip()])
-
             project_latex += (
-                fr"\textbf{{{proj['name']}}} "
+                fr"\textbf{{{escape_latex(proj['name'])}}} "
                 fr"\href{{{proj['link']}}}{{\faExternalLink}} "
-                fr"| \textit{{{proj['stack']}}} \hfill {proj['date']} \\[2pt]" "\n"
-                fr"{escape_latex(proj['summary'])} \\[4pt]" "\n"
+                fr"| \textit{{{escape_latex(proj['stack'])}}} \hfill {escape_latex(proj['date'])} \\[2pt]" "\n"
+                r"\begin{adjustwidth}{0.5cm}{0cm}" "\n"
+                fr"{escape_latex(proj['summary'])}" "\n"
+                r"\end{adjustwidth}" "\n"
+                r"\vspace{6pt}" "\n"
             )
-            
-
-            # if bullets:  # ✅ Only add itemize if points exist
-            #     project_latex += (
-            #         r"\begin{itemize}[leftmargin=*]" "\n"
-            #         f"{bullets}" "\n"
-            #         r"\end{itemize}" "\n\n"
-            #     )
 
         return project_latex
 

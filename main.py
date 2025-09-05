@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 from resume_builder import show  # your function
-
+import videores
 # 🚨 Must be the very first Streamlit command
 st.set_page_config(
     page_title="Resume App",
@@ -9,6 +9,69 @@ st.set_page_config(
     layout="wide"
 )
 
+# pick whichever video you want
+bg_video = videores.processor   # or videores.processor
+
+st.markdown(
+    f"""
+    <style>
+    .video-bg {{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0.8;
+    }}
+
+    .stApp {{
+        background: transparent;
+    }}
+
+    .result-box {{
+        background-color: rgba(100, 255, 250, 0.2);
+        padding: 15px;
+        border-radius: 10px;
+        border-left: 5px solid #ffffff;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 18px;
+        animation: fadeIn 1.5s ease-in-out;
+    }}
+
+    @keyframes fadeIn {{
+        from {{opacity: 0;}}
+        to {{opacity: 1;}}
+    }}
+    </style>
+
+    <video id="bgVideo" autoplay muted loop class="video-bg">
+        <source src="{bg_video}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+    var vid = document.getElementById("bgVideo");
+    vid.playbackRate = 0.4;
+    </script>
+    """,
+    unsafe_allow_html=True
+)
+
+# Sidebar size
+st.markdown(
+    """
+    <style>
+        [data-testid="stSidebar"] {
+            min-width: 350px;
+            max-width: 350px;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.markdown(
     """
     <style>

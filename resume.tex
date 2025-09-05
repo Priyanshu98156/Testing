@@ -1,6 +1,8 @@
 \documentclass[letterpaper,11pt]{article}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
+\usepackage{ragged2e}
+\usepackage{changepage}
 
 \usepackage{enumitem} % allows customizing itemize
 \usepackage{latexsym}
@@ -139,37 +141,25 @@
 
 \begin{document}
 
-%----------HEADING----------
-
 \begin{center}
     {\Huge \scshape << name >>} \\ \vspace{1pt}
-    << city >> \\ \vspace{1pt}
+    << city >> \\ \vspace{3pt}
     \small 
     \small \href{<<telephone>>}{ \raisebox{-0.1\height}\faPhone\ \underline{<<telephone>>} ~} 
     \href{<<email>>}{\raisebox{-0.2\height}\faEnvelope\  \underline{<<email>>}} ~
     \href{<<linkedin>>}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{LinkedIn}}  ~
     \href{<<github>>}{\raisebox{-0.2\height}\faGithub\ \underline{Github}} ~
 \end{center}
-% \section*{Personal Information}
-% << personal_latex >>
 
 \section{Profile}
-\begin{justify}
 <<user_summary|latex_escape>>
-\end{justify}
-
 
 
 \section*{Education}
 << education_latex >>
 
-
-
-
 \section*{Technical Skills}
 << skills_latex >>
-
-
 
 \section*{Projects}
 << projects_latex >>
