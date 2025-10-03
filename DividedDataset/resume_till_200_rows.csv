@@ -1,4 +1,4 @@
-resume,jd,ats_score
+resume,jd,ats_score,new_ats
 "PERSONAL INFORMATION 
 Full Name (Full Name as in Pan card 
 application) : 
@@ -125,7 +125,7 @@ Familiarity with core computer science concepts: operating systems, databases, n
 Basic understanding or interest in cloud services, CI/CD, and containerization tools (e.g., Docker, GitHub Actions).
 A self-starter with a passion for learning new technologies and working in fast-paced, dynamic environments.
 Strong communication, collaboration, and team-player attitude.
-NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",41.41
+NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",41.41,75
 "PERSONAL INFORMATION 
 Full Name (Full Name as in Pan card 
 application) : 
@@ -256,7 +256,7 @@ Pay: ₹7,000.00 - ₹10,000.00 per month
 Education:
 
 Bachelor's (Preferred)
-Work Location: In person",36.35
+Work Location: In person",36.35,85
 "PERSONAL INFORMATION 
 Full Name (Full Name as in Pan card 
 application) : 
@@ -394,7 +394,7 @@ Education:
 Bachelor's (Required)
 Experience:
 
-full stack: 1 year (Preferred)",35.0
+full stack: 1 year (Preferred)",35,75
 "PERSONAL INFORMATION 
 Full Name (Full Name as in Pan card 
 application) : 
@@ -507,7 +507,7 @@ Previous experience in fintech or accounting software is beneficial
 Fixed Stipend: 5000 + Incentive 10000 after 9 month
 
 Job Type: Internship
-Contract length: 9 months",43.18
+Contract length: 9 months",43.18,65
 "PERSONAL INFORMATION 
 Full Name (Full Name as in Pan card 
 application) : 
@@ -648,7 +648,7 @@ Additional Information:
 - This is an in-office role, and the selected candidate will be expected to work from our Bengaluru
 office .
 - The internship duration is 6 months with the possibility of transitioning to a full-time role based on
-performance and business needs.",45.88
+performance and business needs.",45.88,78
 "PERSONAL INFORMATION 
 Full Name (Full Name as in Pan card 
 application) : 
@@ -755,7 +755,7 @@ Experience of working with a range of stakeholders and building effective relati
 Strong knowledge of SAS, Databricks and SQL.
 Excellent communication and stakeholder management skills.
 Ability to articulate technical findings in business terms and demonstrate value to stakeholders.
-",22.9
+",22.9,65
 "PERSONAL INFORMATION 
 Full Name (Full Name as in Pan card 
 application) : 
@@ -868,7 +868,7 @@ Basic knowledge of AI/ML concepts, LLM integration, and API-based AI tools is a 
 Strong problem-solving skills and a passion for building innovative, user-centric products.
 Self-motivated and able to work in a fast-paced startup environment.
 No formal degree required—skills, projects, and passion matter most.
-",22.88
+",22.88,72
 "PERSONAL INFORMATION 
 Full Name (Full Name as in Pan card 
 application) : 
@@ -1042,7 +1042,7 @@ models for specific tasks and enhance output relevance.
  Solid knowledge of data visualization techniques and experience using visualization tools like Tableau or Power BI.
  Strong communication skills to present findings and insights to non-technical stakeholders effectively
  Ability to work collaboratively in a team environment and adapt to changing priorities.
-",25.49
+",25.49,65
 ".Enthusiastic and dedicated Computer Science and Engineering (CSE) undergraduate with a strong
  foundation in key concepts including algorithms, data structures, and programming languages. Prove
 n ability to tackle complex problems and deliver innovative solutions through coursework and practic
@@ -1141,7 +1141,7 @@ Health insurance
 Paid sick time
 Paid time off
 Provident Fund
-Work Location: In person",49.25
+Work Location: In person",49.25,75
 ".Enthusiastic and dedicated Computer Science and Engineering (CSE) undergraduate with a strong
  foundation in key concepts including algorithms, data structures, and programming languages. Prove
 n ability to tackle complex problems and deliver innovative solutions through coursework and practic
@@ -1267,7 +1267,7 @@ Provident Fund
 Experience:
 
 flutter+ios: 4 years (Required)
-Work Location: In person",29.9
+Work Location: In person",29.9,65
 ".Enthusiastic and dedicated Computer Science and Engineering (CSE) undergraduate with a strong
  foundation in key concepts including algorithms, data structures, and programming languages. Prove
 n ability to tackle complex problems and deliver innovative solutions through coursework and practic
@@ -1413,7 +1413,7 @@ WordPress: 2 years (Required)
 PHP: 1 year (Preferred)
 Location:
 
-Mohali, Punjab (Required)",36.68
+Mohali, Punjab (Required)",36.68,45
 ".Enthusiastic and dedicated Computer Science and Engineering (CSE) undergraduate with a strong
  foundation in key concepts including algorithms, data structures, and programming languages. Prove
 n ability to tackle complex problems and deliver innovative solutions through coursework and practic
@@ -1489,7 +1489,7 @@ Pay: ₹8,000.00 - ₹10,000.00 per month
 Location:
 
 Mohali, Punjab (Required)
-Work Location: In person",49.59
+Work Location: In person",49.59,85
 ".Enthusiastic and dedicated Computer Science and Engineering (CSE) undergraduate with a strong
  foundation in key concepts including algorithms, data structures, and programming languages. Prove
 n ability to tackle complex problems and deliver innovative solutions through coursework and practic
@@ -1571,7 +1571,7 @@ Familiarity with core computer science concepts: operating systems, databases, n
 Basic understanding or interest in cloud services, CI/CD, and containerization tools (e.g., Docker, GitHub Actions).
 A self-starter with a passion for learning new technologies and working in fast-paced, dynamic environments.
 Strong communication, collaboration, and team-player attitude.
-NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",60.85
+NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",60.85,75
 ".Enthusiastic and dedicated Computer Science and Engineering (CSE) undergraduate with a strong
  foundation in key concepts including algorithms, data structures, and programming languages. Prove
 n ability to tackle complex problems and deliver innovative solutions through coursework and practic
@@ -1657,7 +1657,7 @@ Pay: ₹7,000.00 - ₹10,000.00 per month
 Education:
 
 Bachelor's (Preferred)
-Work Location: In person",58.2
+Work Location: In person",58.2,85
 ".Enthusiastic and dedicated Computer Science and Engineering (CSE) undergraduate with a strong
  foundation in key concepts including algorithms, data structures, and programming languages. Prove
 n ability to tackle complex problems and deliver innovative solutions through coursework and practic
@@ -1750,7 +1750,7 @@ Education:
 Bachelor's (Required)
 Experience:
 
-full stack: 1 year (Preferred)",43.97
+full stack: 1 year (Preferred)",43.97,75
 ".Enthusiastic and dedicated Computer Science and Engineering (CSE) undergraduate with a strong
  foundation in key concepts including algorithms, data structures, and programming languages. Prove
 n ability to tackle complex problems and deliver innovative solutions through coursework and practic
@@ -1818,7 +1818,7 @@ Previous experience in fintech or accounting software is beneficial
 Fixed Stipend: 5000 + Incentive 10000 after 9 month
 
 Job Type: Internship
-Contract length: 9 months",50.26
+Contract length: 9 months",50.26,65
 ".Enthusiastic and dedicated Computer Science and Engineering (CSE) undergraduate with a strong
  foundation in key concepts including algorithms, data structures, and programming languages. Prove
 n ability to tackle complex problems and deliver innovative solutions through coursework and practic
@@ -1914,7 +1914,7 @@ Additional Information:
 - This is an in-office role, and the selected candidate will be expected to work from our Bengaluru
 office .
 - The internship duration is 6 months with the possibility of transitioning to a full-time role based on
-performance and business needs.",57.0
+performance and business needs.",57,75
 ".Enthusiastic and dedicated Computer Science and Engineering (CSE) undergraduate with a strong
  foundation in key concepts including algorithms, data structures, and programming languages. Prove
 n ability to tackle complex problems and deliver innovative solutions through coursework and practic
@@ -1976,7 +1976,7 @@ Experience of working with a range of stakeholders and building effective relati
 Strong knowledge of SAS, Databricks and SQL.
 Excellent communication and stakeholder management skills.
 Ability to articulate technical findings in business terms and demonstrate value to stakeholders.
-",36.47
+",36.47,65
 ".Enthusiastic and dedicated Computer Science and Engineering (CSE) undergraduate with a strong
  foundation in key concepts including algorithms, data structures, and programming languages. Prove
 n ability to tackle complex problems and deliver innovative solutions through coursework and practic
@@ -2044,7 +2044,7 @@ Basic knowledge of AI/ML concepts, LLM integration, and API-based AI tools is a 
 Strong problem-solving skills and a passion for building innovative, user-centric products.
 Self-motivated and able to work in a fast-paced startup environment.
 No formal degree required—skills, projects, and passion matter most.
-",40.46
+",40.46,75
 ".Enthusiastic and dedicated Computer Science and Engineering (CSE) undergraduate with a strong
  foundation in key concepts including algorithms, data structures, and programming languages. Prove
 n ability to tackle complex problems and deliver innovative solutions through coursework and practic
@@ -2173,7 +2173,7 @@ models for specific tasks and enhance output relevance.
  Solid knowledge of data visualization techniques and experience using visualization tools like Tableau or Power BI.
  Strong communication skills to present findings and insights to non-technical stakeholders effectively
  Ability to work collaboratively in a team environment and adapt to changing priorities.
-",29.41
+",29.41,65
 "Career Objective
 Projects
 Education
@@ -2264,7 +2264,7 @@ Health insurance
 Paid sick time
 Paid time off
 Provident Fund
-Work Location: In person",53.57
+Work Location: In person",53.57,65
 "Career Objective
 Projects
 Education
@@ -2382,7 +2382,7 @@ Provident Fund
 Experience:
 
 flutter+ios: 4 years (Required)
-Work Location: In person",31.89
+Work Location: In person",31.89,55
 "Career Objective
 Projects
 Education
@@ -2520,7 +2520,7 @@ WordPress: 2 years (Required)
 PHP: 1 year (Preferred)
 Location:
 
-Mohali, Punjab (Required)",41.38
+Mohali, Punjab (Required)",41.38,55
 "Career Objective
 Projects
 Education
@@ -2588,7 +2588,7 @@ Pay: ₹8,000.00 - ₹10,000.00 per month
 Location:
 
 Mohali, Punjab (Required)
-Work Location: In person",50.51
+Work Location: In person",50.51,85
 "Career Objective
 Projects
 Education
@@ -2662,7 +2662,7 @@ Familiarity with core computer science concepts: operating systems, databases, n
 Basic understanding or interest in cloud services, CI/CD, and containerization tools (e.g., Docker, GitHub Actions).
 A self-starter with a passion for learning new technologies and working in fast-paced, dynamic environments.
 Strong communication, collaboration, and team-player attitude.
-NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",52.14
+NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",52.14,78
 "Career Objective
 Projects
 Education
@@ -2740,7 +2740,7 @@ Pay: ₹7,000.00 - ₹10,000.00 per month
 Education:
 
 Bachelor's (Preferred)
-Work Location: In person",52.75
+Work Location: In person",52.75,72
 "Career Objective
 Projects
 Education
@@ -2825,7 +2825,7 @@ Education:
 Bachelor's (Required)
 Experience:
 
-full stack: 1 year (Preferred)",47.45
+full stack: 1 year (Preferred)",47.45,78
 "Career Objective
 Projects
 Education
@@ -2885,7 +2885,7 @@ Previous experience in fintech or accounting software is beneficial
 Fixed Stipend: 5000 + Incentive 10000 after 9 month
 
 Job Type: Internship
-Contract length: 9 months",51.89
+Contract length: 9 months",51.89,65
 "Career Objective
 Projects
 Education
@@ -2973,7 +2973,7 @@ Additional Information:
 - This is an in-office role, and the selected candidate will be expected to work from our Bengaluru
 office .
 - The internship duration is 6 months with the possibility of transitioning to a full-time role based on
-performance and business needs.",45.28
+performance and business needs.",45.28,75
 "Career Objective
 Projects
 Education
@@ -3027,7 +3027,7 @@ Experience of working with a range of stakeholders and building effective relati
 Strong knowledge of SAS, Databricks and SQL.
 Excellent communication and stakeholder management skills.
 Ability to articulate technical findings in business terms and demonstrate value to stakeholders.
-",36.98
+",36.98,65
 "Career Objective
 Projects
 Education
@@ -3087,7 +3087,7 @@ Basic knowledge of AI/ML concepts, LLM integration, and API-based AI tools is a 
 Strong problem-solving skills and a passion for building innovative, user-centric products.
 Self-motivated and able to work in a fast-paced startup environment.
 No formal degree required—skills, projects, and passion matter most.
-",39.09
+",39.09,65
 "Career Objective
 Projects
 Education
@@ -3208,7 +3208,7 @@ models for specific tasks and enhance output relevance.
  Solid knowledge of data visualization techniques and experience using visualization tools like Tableau or Power BI.
  Strong communication skills to present findings and insights to non-technical stakeholders effectively
  Ability to work collaboratively in a team environment and adapt to changing priorities.
-",35.67
+",35.67,65
 "ANANTA SHARMA 
  
 Model Town 
@@ -3301,7 +3301,7 @@ Health insurance
 Paid sick time
 Paid time off
 Provident Fund
-Work Location: In person",52.54
+Work Location: In person",52.54,75
 "ANANTA SHARMA 
  
 Model Town 
@@ -3421,7 +3421,7 @@ Provident Fund
 Experience:
 
 flutter+ios: 4 years (Required)
-Work Location: In person",34.61
+Work Location: In person",34.61,65
 "ANANTA SHARMA 
  
 Model Town 
@@ -3561,7 +3561,7 @@ WordPress: 2 years (Required)
 PHP: 1 year (Preferred)
 Location:
 
-Mohali, Punjab (Required)",60.52
+Mohali, Punjab (Required)",60.52,65
 "ANANTA SHARMA 
  
 Model Town 
@@ -3631,7 +3631,7 @@ Pay: ₹8,000.00 - ₹10,000.00 per month
 Location:
 
 Mohali, Punjab (Required)
-Work Location: In person",47.74
+Work Location: In person",47.74,78
 "ANANTA SHARMA 
  
 Model Town 
@@ -3707,7 +3707,7 @@ Familiarity with core computer science concepts: operating systems, databases, n
 Basic understanding or interest in cloud services, CI/CD, and containerization tools (e.g., Docker, GitHub Actions).
 A self-starter with a passion for learning new technologies and working in fast-paced, dynamic environments.
 Strong communication, collaboration, and team-player attitude.
-NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",44.48
+NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",44.48,72
 "ANANTA SHARMA 
  
 Model Town 
@@ -3787,7 +3787,7 @@ Pay: ₹7,000.00 - ₹10,000.00 per month
 Education:
 
 Bachelor's (Preferred)
-Work Location: In person",35.97
+Work Location: In person",35.97,78
 "ANANTA SHARMA 
  
 Model Town 
@@ -3874,7 +3874,7 @@ Education:
 Bachelor's (Required)
 Experience:
 
-full stack: 1 year (Preferred)",46.54
+full stack: 1 year (Preferred)",46.54,75
 "ANANTA SHARMA 
  
 Model Town 
@@ -3936,7 +3936,7 @@ Previous experience in fintech or accounting software is beneficial
 Fixed Stipend: 5000 + Incentive 10000 after 9 month
 
 Job Type: Internship
-Contract length: 9 months",43.42
+Contract length: 9 months",43.42,65
 "ANANTA SHARMA 
  
 Model Town 
@@ -4026,7 +4026,7 @@ Additional Information:
 - This is an in-office role, and the selected candidate will be expected to work from our Bengaluru
 office .
 - The internship duration is 6 months with the possibility of transitioning to a full-time role based on
-performance and business needs.",56.27
+performance and business needs.",56.27,78
 "ANANTA SHARMA 
  
 Model Town 
@@ -4082,7 +4082,7 @@ Experience of working with a range of stakeholders and building effective relati
 Strong knowledge of SAS, Databricks and SQL.
 Excellent communication and stakeholder management skills.
 Ability to articulate technical findings in business terms and demonstrate value to stakeholders.
-",24.9
+",24.9,65
 "ANANTA SHARMA 
  
 Model Town 
@@ -4144,7 +4144,7 @@ Basic knowledge of AI/ML concepts, LLM integration, and API-based AI tools is a 
 Strong problem-solving skills and a passion for building innovative, user-centric products.
 Self-motivated and able to work in a fast-paced startup environment.
 No formal degree required—skills, projects, and passion matter most.
-",30.43
+",30.43,65
 "ANANTA SHARMA 
  
 Model Town 
@@ -4267,7 +4267,7 @@ models for specific tasks and enhance output relevance.
  Solid knowledge of data visualization techniques and experience using visualization tools like Tableau or Power BI.
  Strong communication skills to present findings and insights to non-technical stakeholders effectively
  Ability to work collaboratively in a team environment and adapt to changing priorities.
-",29.18
+",29.18,65
 "OBJECTIVE
 CONTACT ME
 SKILLS
@@ -4357,7 +4357,7 @@ Health insurance
 Paid sick time
 Paid time off
 Provident Fund
-Work Location: In person",53.27
+Work Location: In person",53.27,75
 "OBJECTIVE
 CONTACT ME
 SKILLS
@@ -4474,7 +4474,7 @@ Provident Fund
 Experience:
 
 flutter+ios: 4 years (Required)
-Work Location: In person",28.36
+Work Location: In person",28.36,45
 "OBJECTIVE
 CONTACT ME
 SKILLS
@@ -4611,7 +4611,7 @@ WordPress: 2 years (Required)
 PHP: 1 year (Preferred)
 Location:
 
-Mohali, Punjab (Required)",55.12
+Mohali, Punjab (Required)",55.12,65
 "OBJECTIVE
 CONTACT ME
 SKILLS
@@ -4678,7 +4678,7 @@ Pay: ₹8,000.00 - ₹10,000.00 per month
 Location:
 
 Mohali, Punjab (Required)
-Work Location: In person",46.17
+Work Location: In person",46.17,75
 "OBJECTIVE
 CONTACT ME
 SKILLS
@@ -4751,7 +4751,7 @@ Familiarity with core computer science concepts: operating systems, databases, n
 Basic understanding or interest in cloud services, CI/CD, and containerization tools (e.g., Docker, GitHub Actions).
 A self-starter with a passion for learning new technologies and working in fast-paced, dynamic environments.
 Strong communication, collaboration, and team-player attitude.
-NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",45.6
+NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",45.6,65
 "OBJECTIVE
 CONTACT ME
 SKILLS
@@ -4828,7 +4828,7 @@ Pay: ₹7,000.00 - ₹10,000.00 per month
 Education:
 
 Bachelor's (Preferred)
-Work Location: In person",39.68
+Work Location: In person",39.68,65
 "OBJECTIVE
 CONTACT ME
 SKILLS
@@ -4912,7 +4912,7 @@ Education:
 Bachelor's (Required)
 Experience:
 
-full stack: 1 year (Preferred)",41.37
+full stack: 1 year (Preferred)",41.37,65
 "OBJECTIVE
 CONTACT ME
 SKILLS
@@ -4971,7 +4971,7 @@ Previous experience in fintech or accounting software is beneficial
 Fixed Stipend: 5000 + Incentive 10000 after 9 month
 
 Job Type: Internship
-Contract length: 9 months",45.41
+Contract length: 9 months",45.41,35
 "OBJECTIVE
 CONTACT ME
 SKILLS
@@ -5058,7 +5058,7 @@ Additional Information:
 - This is an in-office role, and the selected candidate will be expected to work from our Bengaluru
 office .
 - The internship duration is 6 months with the possibility of transitioning to a full-time role based on
-performance and business needs.",55.06
+performance and business needs.",55.06,65
 "OBJECTIVE
 CONTACT ME
 SKILLS
@@ -5111,7 +5111,7 @@ Experience of working with a range of stakeholders and building effective relati
 Strong knowledge of SAS, Databricks and SQL.
 Excellent communication and stakeholder management skills.
 Ability to articulate technical findings in business terms and demonstrate value to stakeholders.
-",22.88
+",22.88,35
 "OBJECTIVE
 CONTACT ME
 SKILLS
@@ -5170,7 +5170,7 @@ Basic knowledge of AI/ML concepts, LLM integration, and API-based AI tools is a 
 Strong problem-solving skills and a passion for building innovative, user-centric products.
 Self-motivated and able to work in a fast-paced startup environment.
 No formal degree required—skills, projects, and passion matter most.
-",30.6
+",30.6,45
 "OBJECTIVE
 CONTACT ME
 SKILLS
@@ -5290,7 +5290,7 @@ models for specific tasks and enhance output relevance.
  Solid knowledge of data visualization techniques and experience using visualization tools like Tableau or Power BI.
  Strong communication skills to present findings and insights to non-technical stakeholders effectively
  Ability to work collaboratively in a team environment and adapt to changing priorities.
-",19.3
+",19.3,65
 "Saif Ahmad 
 9984808196|saifzeba20072002@gmail.com|Jalandhar, Punjab 
 Summary: 
@@ -5377,7 +5377,7 @@ Health insurance
 Paid sick time
 Paid time off
 Provident Fund
-Work Location: In person",41.15
+Work Location: In person",41.15,75
 "Saif Ahmad 
 9984808196|saifzeba20072002@gmail.com|Jalandhar, Punjab 
 Summary: 
@@ -5491,7 +5491,7 @@ Provident Fund
 Experience:
 
 flutter+ios: 4 years (Required)
-Work Location: In person",30.17
+Work Location: In person",30.17,45
 "Saif Ahmad 
 9984808196|saifzeba20072002@gmail.com|Jalandhar, Punjab 
 Summary: 
@@ -5625,7 +5625,7 @@ WordPress: 2 years (Required)
 PHP: 1 year (Preferred)
 Location:
 
-Mohali, Punjab (Required)",38.92
+Mohali, Punjab (Required)",38.92,25
 "Saif Ahmad 
 9984808196|saifzeba20072002@gmail.com|Jalandhar, Punjab 
 Summary: 
@@ -5689,7 +5689,7 @@ Pay: ₹8,000.00 - ₹10,000.00 per month
 Location:
 
 Mohali, Punjab (Required)
-Work Location: In person",50.96
+Work Location: In person",50.96,85
 "Saif Ahmad 
 9984808196|saifzeba20072002@gmail.com|Jalandhar, Punjab 
 Summary: 
@@ -5759,7 +5759,7 @@ Familiarity with core computer science concepts: operating systems, databases, n
 Basic understanding or interest in cloud services, CI/CD, and containerization tools (e.g., Docker, GitHub Actions).
 A self-starter with a passion for learning new technologies and working in fast-paced, dynamic environments.
 Strong communication, collaboration, and team-player attitude.
-NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",39.99
+NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",39.99,72
 "Saif Ahmad 
 9984808196|saifzeba20072002@gmail.com|Jalandhar, Punjab 
 Summary: 
@@ -5833,7 +5833,7 @@ Pay: ₹7,000.00 - ₹10,000.00 per month
 Education:
 
 Bachelor's (Preferred)
-Work Location: In person",41.62
+Work Location: In person",41.62,78
 "Saif Ahmad 
 9984808196|saifzeba20072002@gmail.com|Jalandhar, Punjab 
 Summary: 
@@ -5914,7 +5914,7 @@ Education:
 Bachelor's (Required)
 Experience:
 
-full stack: 1 year (Preferred)",41.93
+full stack: 1 year (Preferred)",41.93,75
 "Saif Ahmad 
 9984808196|saifzeba20072002@gmail.com|Jalandhar, Punjab 
 Summary: 
@@ -5970,7 +5970,7 @@ Previous experience in fintech or accounting software is beneficial
 Fixed Stipend: 5000 + Incentive 10000 after 9 month
 
 Job Type: Internship
-Contract length: 9 months",42.9
+Contract length: 9 months",42.9,65
 "Saif Ahmad 
 9984808196|saifzeba20072002@gmail.com|Jalandhar, Punjab 
 Summary: 
@@ -6054,7 +6054,7 @@ Additional Information:
 - This is an in-office role, and the selected candidate will be expected to work from our Bengaluru
 office .
 - The internship duration is 6 months with the possibility of transitioning to a full-time role based on
-performance and business needs.",40.05
+performance and business needs.",40.05,75
 "Saif Ahmad 
 9984808196|saifzeba20072002@gmail.com|Jalandhar, Punjab 
 Summary: 
@@ -6104,7 +6104,7 @@ Experience of working with a range of stakeholders and building effective relati
 Strong knowledge of SAS, Databricks and SQL.
 Excellent communication and stakeholder management skills.
 Ability to articulate technical findings in business terms and demonstrate value to stakeholders.
-",29.06
+",29.06,65
 "Saif Ahmad 
 9984808196|saifzeba20072002@gmail.com|Jalandhar, Punjab 
 Summary: 
@@ -6160,7 +6160,7 @@ Basic knowledge of AI/ML concepts, LLM integration, and API-based AI tools is a 
 Strong problem-solving skills and a passion for building innovative, user-centric products.
 Self-motivated and able to work in a fast-paced startup environment.
 No formal degree required—skills, projects, and passion matter most.
-",35.72
+",35.72,65
 "Saif Ahmad 
 9984808196|saifzeba20072002@gmail.com|Jalandhar, Punjab 
 Summary: 
@@ -6277,7 +6277,7 @@ models for specific tasks and enhance output relevance.
  Solid knowledge of data visualization techniques and experience using visualization tools like Tableau or Power BI.
  Strong communication skills to present findings and insights to non-technical stakeholders effectively
  Ability to work collaboratively in a team environment and adapt to changing priorities.
-",34.02
+",34.02,65
 "Manish Kumar
 § github.com/manish7696
 ï https://www.linkedin.com/in/manish-kumar-82007924a/ # manishk95928@gmail.com
@@ -6373,7 +6373,7 @@ Health insurance
 Paid sick time
 Paid time off
 Provident Fund
-Work Location: In person",36.75
+Work Location: In person",36.75,78
 "Manish Kumar
 § github.com/manish7696
 ï https://www.linkedin.com/in/manish-kumar-82007924a/ # manishk95928@gmail.com
@@ -6496,7 +6496,7 @@ Provident Fund
 Experience:
 
 flutter+ios: 4 years (Required)
-Work Location: In person",25.69
+Work Location: In person",25.69,65
 "Manish Kumar
 § github.com/manish7696
 ï https://www.linkedin.com/in/manish-kumar-82007924a/ # manishk95928@gmail.com
@@ -6639,7 +6639,7 @@ WordPress: 2 years (Required)
 PHP: 1 year (Preferred)
 Location:
 
-Mohali, Punjab (Required)",34.87
+Mohali, Punjab (Required)",34.87,65
 "Manish Kumar
 § github.com/manish7696
 ï https://www.linkedin.com/in/manish-kumar-82007924a/ # manishk95928@gmail.com
@@ -6712,7 +6712,7 @@ Pay: ₹8,000.00 - ₹10,000.00 per month
 Location:
 
 Mohali, Punjab (Required)
-Work Location: In person",36.99
+Work Location: In person",36.99,88
 "Manish Kumar
 § github.com/manish7696
 ï https://www.linkedin.com/in/manish-kumar-82007924a/ # manishk95928@gmail.com
@@ -6791,7 +6791,7 @@ Familiarity with core computer science concepts: operating systems, databases, n
 Basic understanding or interest in cloud services, CI/CD, and containerization tools (e.g., Docker, GitHub Actions).
 A self-starter with a passion for learning new technologies and working in fast-paced, dynamic environments.
 Strong communication, collaboration, and team-player attitude.
-NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",30.16
+NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",30.16,78
 "Manish Kumar
 § github.com/manish7696
 ï https://www.linkedin.com/in/manish-kumar-82007924a/ # manishk95928@gmail.com
@@ -6874,7 +6874,7 @@ Pay: ₹7,000.00 - ₹10,000.00 per month
 Education:
 
 Bachelor's (Preferred)
-Work Location: In person",25.33
+Work Location: In person",25.33,85
 "Manish Kumar
 § github.com/manish7696
 ï https://www.linkedin.com/in/manish-kumar-82007924a/ # manishk95928@gmail.com
@@ -6964,7 +6964,7 @@ Education:
 Bachelor's (Required)
 Experience:
 
-full stack: 1 year (Preferred)",37.7
+full stack: 1 year (Preferred)",37.7,85
 "Manish Kumar
 § github.com/manish7696
 ï https://www.linkedin.com/in/manish-kumar-82007924a/ # manishk95928@gmail.com
@@ -7029,7 +7029,7 @@ Previous experience in fintech or accounting software is beneficial
 Fixed Stipend: 5000 + Incentive 10000 after 9 month
 
 Job Type: Internship
-Contract length: 9 months",34.52
+Contract length: 9 months",34.52,75
 "Manish Kumar
 § github.com/manish7696
 ï https://www.linkedin.com/in/manish-kumar-82007924a/ # manishk95928@gmail.com
@@ -7122,7 +7122,7 @@ Additional Information:
 - This is an in-office role, and the selected candidate will be expected to work from our Bengaluru
 office .
 - The internship duration is 6 months with the possibility of transitioning to a full-time role based on
-performance and business needs.",36.51
+performance and business needs.",36.51,85
 "Manish Kumar
 § github.com/manish7696
 ï https://www.linkedin.com/in/manish-kumar-82007924a/ # manishk95928@gmail.com
@@ -7181,7 +7181,7 @@ Experience of working with a range of stakeholders and building effective relati
 Strong knowledge of SAS, Databricks and SQL.
 Excellent communication and stakeholder management skills.
 Ability to articulate technical findings in business terms and demonstrate value to stakeholders.
-",19.73
+",19.73,75
 "Manish Kumar
 § github.com/manish7696
 ï https://www.linkedin.com/in/manish-kumar-82007924a/ # manishk95928@gmail.com
@@ -7246,7 +7246,7 @@ Basic knowledge of AI/ML concepts, LLM integration, and API-based AI tools is a 
 Strong problem-solving skills and a passion for building innovative, user-centric products.
 Self-motivated and able to work in a fast-paced startup environment.
 No formal degree required—skills, projects, and passion matter most.
-",34.04
+",34.04,75
 "Manish Kumar
 § github.com/manish7696
 ï https://www.linkedin.com/in/manish-kumar-82007924a/ # manishk95928@gmail.com
@@ -7372,7 +7372,7 @@ models for specific tasks and enhance output relevance.
  Solid knowledge of data visualization techniques and experience using visualization tools like Tableau or Power BI.
  Strong communication skills to present findings and insights to non-technical stakeholders effectively
  Ability to work collaboratively in a team environment and adapt to changing priorities.
-",33.3
+",33.3,65
 "9041852805
 2412mihirmayank@gmail.com
 52, Tara Singh Avenue,
@@ -7468,7 +7468,7 @@ Health insurance
 Paid sick time
 Paid time off
 Provident Fund
-Work Location: In person",53.87
+Work Location: In person",53.87,65
 "9041852805
 2412mihirmayank@gmail.com
 52, Tara Singh Avenue,
@@ -7591,7 +7591,7 @@ Provident Fund
 Experience:
 
 flutter+ios: 4 years (Required)
-Work Location: In person",35.44
+Work Location: In person",35.44,45
 "9041852805
 2412mihirmayank@gmail.com
 52, Tara Singh Avenue,
@@ -7734,7 +7734,7 @@ WordPress: 2 years (Required)
 PHP: 1 year (Preferred)
 Location:
 
-Mohali, Punjab (Required)",50.16
+Mohali, Punjab (Required)",50.16,45
 "9041852805
 2412mihirmayank@gmail.com
 52, Tara Singh Avenue,
@@ -7807,7 +7807,7 @@ Pay: ₹8,000.00 - ₹10,000.00 per month
 Location:
 
 Mohali, Punjab (Required)
-Work Location: In person",57.71
+Work Location: In person",57.71,85
 "9041852805
 2412mihirmayank@gmail.com
 52, Tara Singh Avenue,
@@ -7886,7 +7886,7 @@ Familiarity with core computer science concepts: operating systems, databases, n
 Basic understanding or interest in cloud services, CI/CD, and containerization tools (e.g., Docker, GitHub Actions).
 A self-starter with a passion for learning new technologies and working in fast-paced, dynamic environments.
 Strong communication, collaboration, and team-player attitude.
-NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",49.48
+NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",49.48,75
 "9041852805
 2412mihirmayank@gmail.com
 52, Tara Singh Avenue,
@@ -7969,7 +7969,7 @@ Pay: ₹7,000.00 - ₹10,000.00 per month
 Education:
 
 Bachelor's (Preferred)
-Work Location: In person",48.69
+Work Location: In person",48.69,75
 "9041852805
 2412mihirmayank@gmail.com
 52, Tara Singh Avenue,
@@ -8059,7 +8059,7 @@ Education:
 Bachelor's (Required)
 Experience:
 
-full stack: 1 year (Preferred)",47.73
+full stack: 1 year (Preferred)",47.73,78
 "9041852805
 2412mihirmayank@gmail.com
 52, Tara Singh Avenue,
@@ -8124,7 +8124,7 @@ Previous experience in fintech or accounting software is beneficial
 Fixed Stipend: 5000 + Incentive 10000 after 9 month
 
 Job Type: Internship
-Contract length: 9 months",51.36
+Contract length: 9 months",51.36,65
 "9041852805
 2412mihirmayank@gmail.com
 52, Tara Singh Avenue,
@@ -8217,7 +8217,7 @@ Additional Information:
 - This is an in-office role, and the selected candidate will be expected to work from our Bengaluru
 office .
 - The internship duration is 6 months with the possibility of transitioning to a full-time role based on
-performance and business needs.",49.46
+performance and business needs.",49.46,65
 "9041852805
 2412mihirmayank@gmail.com
 52, Tara Singh Avenue,
@@ -8276,7 +8276,7 @@ Experience of working with a range of stakeholders and building effective relati
 Strong knowledge of SAS, Databricks and SQL.
 Excellent communication and stakeholder management skills.
 Ability to articulate technical findings in business terms and demonstrate value to stakeholders.
-",33.95
+",33.95,45
 "9041852805
 2412mihirmayank@gmail.com
 52, Tara Singh Avenue,
@@ -8341,7 +8341,7 @@ Basic knowledge of AI/ML concepts, LLM integration, and API-based AI tools is a 
 Strong problem-solving skills and a passion for building innovative, user-centric products.
 Self-motivated and able to work in a fast-paced startup environment.
 No formal degree required—skills, projects, and passion matter most.
-",53.25
+",53.25,65
 "9041852805
 2412mihirmayank@gmail.com
 52, Tara Singh Avenue,
@@ -8467,7 +8467,7 @@ models for specific tasks and enhance output relevance.
  Solid knowledge of data visualization techniques and experience using visualization tools like Tableau or Power BI.
  Strong communication skills to present findings and insights to non-technical stakeholders effectively
  Ability to work collaboratively in a team environment and adapt to changing priorities.
-",36.55
+",36.55,65
 "Deepali  
 Last Updated on 01st June 2024 
 4th year IT Undergraduate | +916284527173 | deepalimodgil62@gmail.com 
@@ -8558,7 +8558,7 @@ Health insurance
 Paid sick time
 Paid time off
 Provident Fund
-Work Location: In person",36.25
+Work Location: In person",36.25,65
 "Deepali  
 Last Updated on 01st June 2024 
 4th year IT Undergraduate | +916284527173 | deepalimodgil62@gmail.com 
@@ -8676,7 +8676,7 @@ Provident Fund
 Experience:
 
 flutter+ios: 4 years (Required)
-Work Location: In person",29.02
+Work Location: In person",29.02,65
 "Deepali  
 Last Updated on 01st June 2024 
 4th year IT Undergraduate | +916284527173 | deepalimodgil62@gmail.com 
@@ -8814,7 +8814,7 @@ WordPress: 2 years (Required)
 PHP: 1 year (Preferred)
 Location:
 
-Mohali, Punjab (Required)",29.73
+Mohali, Punjab (Required)",29.73,65
 "Deepali  
 Last Updated on 01st June 2024 
 4th year IT Undergraduate | +916284527173 | deepalimodgil62@gmail.com 
@@ -8882,7 +8882,7 @@ Pay: ₹8,000.00 - ₹10,000.00 per month
 Location:
 
 Mohali, Punjab (Required)
-Work Location: In person",39.37
+Work Location: In person",39.37,85
 "Deepali  
 Last Updated on 01st June 2024 
 4th year IT Undergraduate | +916284527173 | deepalimodgil62@gmail.com 
@@ -8956,7 +8956,7 @@ Familiarity with core computer science concepts: operating systems, databases, n
 Basic understanding or interest in cloud services, CI/CD, and containerization tools (e.g., Docker, GitHub Actions).
 A self-starter with a passion for learning new technologies and working in fast-paced, dynamic environments.
 Strong communication, collaboration, and team-player attitude.
-NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",39.4
+NOTE: Only BCA (2025 pass-out) or B.Tech (2026 pass-out) can apply.",39.4,78
 "Deepali  
 Last Updated on 01st June 2024 
 4th year IT Undergraduate | +916284527173 | deepalimodgil62@gmail.com 
@@ -9034,7 +9034,7 @@ Pay: ₹7,000.00 - ₹10,000.00 per month
 Education:
 
 Bachelor's (Preferred)
-Work Location: In person",31.44
+Work Location: In person",31.44,78
 "Deepali  
 Last Updated on 01st June 2024 
 4th year IT Undergraduate | +916284527173 | deepalimodgil62@gmail.com 
@@ -9119,7 +9119,7 @@ Education:
 Bachelor's (Required)
 Experience:
 
-full stack: 1 year (Preferred)",43.23
+full stack: 1 year (Preferred)",43.23,75
 "Deepali  
 Last Updated on 01st June 2024 
 4th year IT Undergraduate | +916284527173 | deepalimodgil62@gmail.com 
@@ -9179,7 +9179,7 @@ Previous experience in fintech or accounting software is beneficial
 Fixed Stipend: 5000 + Incentive 10000 after 9 month
 
 Job Type: Internship
-Contract length: 9 months",43.31
+Contract length: 9 months",43.31,65
 "Deepali  
 Last Updated on 01st June 2024 
 4th year IT Undergraduate | +916284527173 | deepalimodgil62@gmail.com 
@@ -9267,4 +9267,4 @@ Additional Information:
 - This is an in-office role, and the selected candidate will be expected to work from our Bengaluru
 office .
 - The internship duration is 6 months with the possibility of transitioning to a full-time role based on
-performance and business needs.",38.45
+performance and business needs.",38.45,75
