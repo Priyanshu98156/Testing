@@ -12,7 +12,8 @@ sentence-transformers
 tqdm
 streamlit-option-menu
 PyMuPDF
-
+python-docx
+firebase-admin
 
 
 steps to create a new wnv
