@@ -27,9 +27,9 @@ def initialize_firebase():
     """Initializes the Firebase Admin SDK, ensuring it only runs once."""
     if not st.session_state.firebase_initialized:
         try:
-            key_path = "careercatalyst-225cb-e7cd4af759c0.json" # Your key file
+            key_path = "careercatalyst-b08ad-39759fa3a8f1.json" # Your key file
             if os.path.exists(key_path):
-                cred = credentials.Certificate("careercatalyst-225cb-e7cd4af759c0.json")
+                cred = credentials.Certificate(key_path)
                 firebase_admin.initialize_app(cred)
                 st.session_state.firebase_initialized = True
                 print("✅ Firebase initialized.")
