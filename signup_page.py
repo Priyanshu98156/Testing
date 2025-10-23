@@ -40,28 +40,35 @@ import streamlit as st
 import firebase_admin
 from firebase_admin import credentials, auth, firestore
 
-# ------------------ Firebase Initialization ------------------
-def init_firebase():
-    try:
-        if not firebase_admin._apps:
-            cred = credentials.Certificate("careercatalyst-225cb-e7cd4af759c0.json")
-            firebase_admin.initialize_app(cred)
-    except Exception as e:
-        st.error(f"Failed to initialize Firebase: {e}")
+####------------------ Firebase Initialization ------------------
+# def init_firebase():
+#     try:
+#         if not firebase_admin._apps:
+#             cred = credentials.Certificate("careercatalyst-b08ad-39759fa3a8f1.json")
+#             firebase_admin.initialize_app(cred)
+#     except Exception as e:
+#         st.error(f"Failed to initialize Firebase: {e}")
 
-# Initialize Firebase
-init_firebase()
+# # Initialize Firebase
+# init_firebase()
 
-# Firestore client (only works if Firestore exists)
-try:
-    db = firestore.client()
-except Exception as e:
-    st.warning("Firestore not initialized yet. Please create a Firestore database in your Firebase project.")
-    db = None
+# ###Firestore client (only works if Firestore exists)
+# try:
+#     db = firestore.client()
+# except Exception as e:
+#     st.warning("Firestore not initialized yet. Please create a Firestore database in your Firebase project.")
+#     db = None
 
 # ------------------ Signup Page ------------------
 def render_signup_page():
     st.title("Create a New Account")
+
+    db = firestore.client()
+    try:
+        db = firestore.client()
+    except Exception as e:
+        st.warning("Firestore not initialized yet. Please create a Firestore database in your Firebase project.")
+        db = None
 
     with st.form("signup_form"):
         name = st.text_input("Name*")
@@ -103,9 +110,9 @@ def render_signup_page():
         st.session_state.view = 'login'
         st.rerun()  # ✅ updated
 
-# ------------------ Main ------------------
-if 'view' not in st.session_state:
-    st.session_state.view = 'signup'
+# # ------------------ Main ------------------
+# if 'view' not in st.session_state:
+#     st.session_state.view = 'signup'
 
-if st.session_state.view == 'signup':
-    render_signup_page()
+# if st.session_state.view == 'signup':
+#     render_signup_page()
