@@ -26,7 +26,7 @@ if "view" not in st.session_state:
 def init_firebase():
     try:
         if not firebase_admin._apps:
-            cred = credentials.Certificate("careercatalyst-b08ad-39759fa3a8f1.json")
+            cred = credentials.Certificate("careercatalyst-f5bbd-c05519092a8a.json")
             firebase_admin.initialize_app(cred)
     except Exception as e:
         st.error(f"Failed to initialize Firebase: {e}")

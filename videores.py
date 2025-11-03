@@ -87,3 +87,36 @@ dance     = "https://github.com/Priyanshu98156/videos/raw/main/dance.mp4"
     #     """,
     #     unsafe_allow_html=True
     # )
+
+
+# background video
+
+    #     st.markdown(
+#     """
+#     <style>
+#         /* Change main app background */
+#         .stApp {
+#             background-color: #D3C5C5;  /* Dark background */
+#             color: black;  /* Text color for contrast */
+#         }
+
+#         /* Optional: Customize text inputs, buttons, etc. */
+#         .stTextInput > div > div > input {
+#             background-color: #1a1d23;
+#             color: white;
+#         }
+
+#         .stButton > button {
+#             background-color: #2b313e;
+#             color: white;
+#             border-radius: 10px;
+#         }
+
+#         .stButton > button:hover {
+#             background-color: #4b5563;
+#             color: white;
+#         }
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
