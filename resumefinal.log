@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.28)  5 SEP 2025 22:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.28)  4 NOV 2025 11:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -831,11 +831,11 @@ LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
 (Font)              using `T1/lmr/bx/n' instead on input line 154.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 192.
+(Font)              <10.95> on input line 178.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 192.
+(Font)              <8> on input line 178.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 192.
+(Font)              <6> on input line 178.
 
 
 [1
@@ -858,11 +858,11 @@ Package rerunfilecheck Info: File `resumefinal.out' has not changed.
 Here is how much of TeX's memory you used:
  23772 strings out of 467799
  436999 string characters out of 5436040
- 839972 words of memory out of 5000000
+ 833972 words of memory out of 5000000
  51999 multiletter control sequences out of 15000+600000
  681593 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,6n,92p,433b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,6n,92p,454b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb><c
 :/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/tex
 mf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type
@@ -870,10 +870,10 @@ mf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type
 .pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2
 025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fon
 ts/type1/public/lm/lmsy6.pfb>
-Output written on resumefinal.pdf (1 page, 162783 bytes).
+Output written on resumefinal.pdf (1 page, 150362 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 77 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  5 named destinations out of 1000 (max. 500000)
  37 words of extra memory for PDF output out of 10000 (max. 10000000)
 

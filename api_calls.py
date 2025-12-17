@@ -6,7 +6,7 @@ import streamlit as st
 # Set your API key from an environment variable for security
 # It is better to use os.getenv() than hardcoding your key
 # genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-genai.configure(api_key=st.secrets["GoogleAiStudio"]["anshika_api_key"])
+genai.configure(api_key=st.secrets["GoogleAiStudio"]["priyanshu_api_key"])
 
 # Your final prompt with placeholders for user input
 prompt = """
@@ -32,8 +32,8 @@ def generate_resume_summary(job_description, user_summary):
     """
     Generates a professional resume summary using the Gemini API.
     """
-    model = genai.GenerativeModel('gemini-1.5-flash')
-    
+    model = genai.GenerativeModel("models/gemini-2.5-flash")
+
     # Fill in the placeholders in the prompt with the actual user data
     formatted_prompt = prompt.format(
         job_description_text=job_description,
@@ -92,7 +92,8 @@ def generate_project_summary(project_title, project_desc, project_stack):
     - Output only the polished summary.
     """
 
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel("models/gemini-2.5-flash")
+
     response = model.generate_content(project_prompt)
     return response.text.strip()
 
@@ -120,6 +121,15 @@ def generate_achievements(achievements_raw):
     Resume-ready achievements in bullet points.
     """
 
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel("models/gemini-2.5-flash")
+
     response = model.generate_content(prompt)
     return response.text.strip()
+
+
+
+
+
+
+# for m in genai.list_models():
+#     print(m.name)
